@@ -364,6 +364,9 @@ binds {
     // Show sink switcher
     Mod+A hotkey-overlay-title="Switch between audio sinks" {spawn "/home/ali-ahmed/.config/niri/scripts/bt-toggle.sh"; }
 
+    // Hot reload waybar
+    Mod+Shift+W hotkey-overlay-title="Refresh Waybar" { spawn-sh "/home/ali-ahmed/.config/waybar/scripts/launch.sh"; }
+
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn-sh "rofi -show drun -show-icons"; }
