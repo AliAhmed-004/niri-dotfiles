@@ -68,6 +68,15 @@ input {
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
     focus-follows-mouse max-scroll-amount="0%"
 }
+gestures {
+    hot-corners {
+        off
+        // top-left
+        // top-right
+        // bottom-left
+        // bottom-right
+    }
+}
 
 // You can configure outputs by their name, which you can find
 // by running `niri msg outputs` while inside a niri instance.
@@ -313,7 +322,6 @@ animations {
 // Make inactive windows semitransparent.
 window-rule {
     match is-active=false
-
     opacity 0.95
 }
 
